@@ -38,6 +38,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IUf-eY-692" kind="show" id="eJJ-yR-WqW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -74,6 +77,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1252" y="353"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="PHg-Z4-asG">
+            <objects>
+                <viewController id="IUf-eY-692" customClass="DetailViewController" customModule="Table_View_Hackwich" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rg9-um-Inz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hy8-xJ-Vjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MsF-0m-m3z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8I-wN-jIc">
+                                <rect key="frame" x="225" y="81" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDS-FB-ly1">
+                                <rect key="frame" x="225" y="124" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Population" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-qh-2fq">
+                                <rect key="frame" x="225" y="162" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-YI-RFv">
+                                <rect key="frame" x="277" y="358" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="IUf-eY-692" eventType="touchUpInside" id="2q4-Ce-ZNb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sk-tg-oD1">
+                                <rect key="frame" x="175" y="200" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="St1-nu-PEW"/>
+                                    <constraint firstAttribute="height" constant="150" id="mrj-ly-xP2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9sk-tg-oD1" firstAttribute="centerX" secondItem="MsF-0m-m3z" secondAttribute="centerX" id="1l4-kS-rwE"/>
+                            <constraint firstItem="j1E-YI-RFv" firstAttribute="centerX" secondItem="MsF-0m-m3z" secondAttribute="centerX" id="2IA-RX-Kh7"/>
+                            <constraint firstItem="p8I-wN-jIc" firstAttribute="centerX" secondItem="MsF-0m-m3z" secondAttribute="centerX" id="Vka-Bt-4UP"/>
+                            <constraint firstItem="kDS-FB-ly1" firstAttribute="centerX" secondItem="MsF-0m-m3z" secondAttribute="centerX" id="aui-E5-Gvv"/>
+                            <constraint firstItem="Wvx-qh-2fq" firstAttribute="centerX" secondItem="MsF-0m-m3z" secondAttribute="centerX" id="rGL-aw-n6q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="p8I-wN-jIc" id="4FL-vR-0nv"/>
+                        <outlet property="imageView" destination="9sk-tg-oD1" id="ax4-PL-gKq"/>
+                        <outlet property="populationTextField" destination="Wvx-qh-2fq" id="CZO-HE-JVC"/>
+                        <outlet property="stateTextField" destination="kDS-FB-ly1" id="eW5-zG-lgl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tzv-bg-wuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zmm-Va-1GZ">

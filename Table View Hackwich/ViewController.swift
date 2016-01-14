@@ -50,6 +50,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cities.insert(city, atIndex: destinationIndexPath.row)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! DetailViewController
+        let index = tableView.indexPathForSelectedRow?.row
+        dvc.city = cities[index!]
+    }
+
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add City", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in

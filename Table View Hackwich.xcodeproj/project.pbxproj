@@ -15,6 +15,7 @@
 		AE5ABB1D1C46AF5F00AEBFBE /* Table_View_HackwichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ABB1C1C46AF5F00AEBFBE /* Table_View_HackwichTests.swift */; };
 		AE5ABB281C46AF5F00AEBFBE /* Table_View_HackwichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ABB271C46AF5F00AEBFBE /* Table_View_HackwichUITests.swift */; };
 		AE5ABB361C46B6E200AEBFBE /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ABB351C46B6E200AEBFBE /* City.swift */; };
+		AE5ABB381C47FF8A00AEBFBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5ABB371C47FF8A00AEBFBE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AE5ABB271C46AF5F00AEBFBE /* Table_View_HackwichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_View_HackwichUITests.swift; sourceTree = "<group>"; };
 		AE5ABB291C46AF5F00AEBFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5ABB351C46B6E200AEBFBE /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		AE5ABB371C47FF8A00AEBFBE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				AE5ABB071C46AF5F00AEBFBE /* AppDelegate.swift */,
 				AE5ABB091C46AF5F00AEBFBE /* ViewController.swift */,
+				AE5ABB371C47FF8A00AEBFBE /* DetailViewController.swift */,
 				AE5ABB0B1C46AF5F00AEBFBE /* Main.storyboard */,
 				AE5ABB351C46B6E200AEBFBE /* City.swift */,
 				AE5ABB0E1C46AF5F00AEBFBE /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				AE5ABB0A1C46AF5F00AEBFBE /* ViewController.swift in Sources */,
 				AE5ABB081C46AF5F00AEBFBE /* AppDelegate.swift in Sources */,
 				AE5ABB361C46B6E200AEBFBE /* City.swift in Sources */,
+				AE5ABB381C47FF8A00AEBFBE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +492,7 @@
 				AE5ABB2E1C46AF5F00AEBFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5ABB2F1C46AF5F00AEBFBE /* Build configuration list for PBXNativeTarget "Table View HackwichTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				AE5ABB311C46AF5F00AEBFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5ABB321C46AF5F00AEBFBE /* Build configuration list for PBXNativeTarget "Table View HackwichUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				AE5ABB341C46AF5F00AEBFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
